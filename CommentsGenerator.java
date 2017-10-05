@@ -13,7 +13,7 @@ class CommentsGenerator{
 		String sponsor;
 		String getSponsor;
 		Scanner input = new Scanner(System.in);
-		System.out.println("\n\nWelcome to the comments generator! Answer questions to generate a comment.\n\nPress \"Enter\" to continue!");
+		System.out.println("\n\nVersion 0.1 \n\nWelcome to the comments generator! Answer questions to generate a comment.\n\nPress \"Enter\" to continue!");
 		input.nextLine();
 		System.out.println("Is logo visibility good(1) or very good(2)?");  
 		String visabilityChoise = input.next();
@@ -44,14 +44,14 @@ class CommentsGenerator{
 				placement = "Wrong number";
 				break;
 		}
-		System.out.println("Type the name of the sponsor:");
-		getSponsor = input.nextLine();
-		sponsor = getSponsor.toUpperCase();
-		String myString = visability + " eksponering for " + sponsor + " på " + placement;
+		//System.out.println("Type the name of the sponsor:");
+		//getSponsor = input.nextLine();
+		//sponsor = getSponsor.toUpperCase();
+		String myString = visability + " eksponering for " + "SP" + " på " + placement;
 		StringSelection stringSelection = new StringSelection(myString);
 		Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
 		clpbrd.setContents(stringSelection, null);
-		System.out.println(myString);//visability + " eksponering for " + "SN" + " på " + placement);
+		System.out.println(myString);//visability + " eksponering for " + "SP" + " på " + placement);
 		input.nextLine();
 	}
 }
