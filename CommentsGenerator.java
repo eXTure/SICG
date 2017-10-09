@@ -13,7 +13,7 @@ class CommentsGenerator{
 		String sponsor;
 		String getSponsor;
 		Scanner input = new Scanner(System.in);
-		System.out.println("\n\nVersion 0.1 \n\nWelcome to the comments generator! Answer questions to generate a comment.\n\nPress \"Enter\" to continue!");
+		System.out.println("\n\nVersion 0.1.0 \n\nWelcome to the comments generator! Answer questions to generate a comment.\n\nPress \"Enter\" to continue!");
 		input.nextLine();
 		System.out.println("Is logo visibility good(1) or very good(2)?");  
 		//Get input for visability
